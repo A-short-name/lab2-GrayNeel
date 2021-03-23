@@ -21,20 +21,37 @@
             <!--End button-->
             
             <!--Logo-->
-            <a class="navbar-brand" href="#"><img src="/todo.svg" alt="" width="30" height="30" class="d-inline-block align-top"> Manager</a>
+            <a class="navbar-brand mx-auto" href="#"><img src="/todo.svg" alt="" width="30" height="30" class="d-inline-block align-top"> Manager</a>
             <!--End Logo-->
 
             <!--Items to show when button is toggled-->
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <form class="form-inline my-2 m-lg-auto">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                <ul class="navbar-nav mr-auto d-block d-sm-none">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">All <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Important</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Today</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Next 7 days</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Private</a>
+                    </li>
+                </ul>
+                <form class="form-inline m-lg-auto">
+                    <input class="form-control mr-sm-2 mt-1 mt-sm-0" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0 d-none d-sm-block" type="submit">Search</button>
                 </form>
             </div>
             <!--End items to show-->
 
             <!--User Icon-->
-            <div class="navbar-nav mt-0 mt-lg-0">
+            <div class="navbar-nav mt-0 mt-lg-0 user-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-circle" viewBox="0 0 16 16">
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
@@ -45,7 +62,7 @@
         <div class='container-fluid'>
             <!--Content goes here-->
             <div class="row" style="min-height: 100vh;">
-                <div class="col-4 py-2 px-lg-3 leftcol-bg d-none d-md-block">
+                <div class="col-4 py-2 px-lg-3 leftcol-bg d-none d-sm-block">
                     <!--Sidebar-->
                     <div class="list-group list-group-flush">
                         <button type="button" class="list-group-item list-group-item-action activelist" aria-current="true">All</button>
